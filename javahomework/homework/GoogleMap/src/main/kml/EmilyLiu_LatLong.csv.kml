@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>EmilyLiu_LatLong.csv</name>
+	<open>1</open>
+	<Schema name="EmilyLiu_LatLong" id="S_EmilyLiu_LatLong_DDSIII">
+		<SimpleField type="double" name="Latitude"><displayName>&lt;b&gt;Latitude&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Longitude"><displayName>&lt;b&gt;Longitude&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Name"><displayName>&lt;b&gt;Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Icon"><displayName>&lt;b&gt;Icon&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="IconScale"><displayName>&lt;b&gt;IconScale&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="IconAltitude"><displayName>&lt;b&gt;IconAltitude&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Latitude</b></td><td>$[EmilyLiu_LatLong/Latitude]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[EmilyLiu_LatLong/Longitude]</td></tr>
+  <tr><td><b>Name</b></td><td>$[EmilyLiu_LatLong/Name]</td></tr>
+  <tr><td><b>Icon</b></td><td>$[EmilyLiu_LatLong/Icon]</td></tr>
+  <tr><td><b>IconScale</b></td><td>$[EmilyLiu_LatLong/IconScale]</td></tr>
+  <tr><td><b>IconAltitude</b></td><td>$[EmilyLiu_LatLong/IconAltitude]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Latitude</b></td><td>$[EmilyLiu_LatLong/Latitude]</td></tr>
+  <tr><td><b>Longitude</b></td><td>$[EmilyLiu_LatLong/Longitude]</td></tr>
+  <tr><td><b>Name</b></td><td>$[EmilyLiu_LatLong/Name]</td></tr>
+  <tr><td><b>Icon</b></td><td>$[EmilyLiu_LatLong/Icon]</td></tr>
+  <tr><td><b>IconScale</b></td><td>$[EmilyLiu_LatLong/IconScale]</td></tr>
+  <tr><td><b>IconAltitude</b></td><td>$[EmilyLiu_LatLong/IconAltitude]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>EmilyLiu_LatLong</name>
+		<visibility>0</visibility>
+		<Placemark>
+			<name>John Doe and Jane Doe</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EmilyLiu_LatLong_DDSIII">
+					<SimpleData name="Latitude">45.4449</SimpleData>
+					<SimpleData name="Longitude">-75.6494</SimpleData>
+					<SimpleData name="Name">John Doe and Jane Doe</SimpleData>
+					<SimpleData name="Icon">111</SimpleData>
+					<SimpleData name="IconScale">1</SimpleData>
+					<SimpleData name="IconAltitude">1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.649424,45.44488610000001,34.0063</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>David Smith</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EmilyLiu_LatLong_DDSIII">
+					<SimpleData name="Latitude">45.4323</SimpleData>
+					<SimpleData name="Longitude">-75.7097</SimpleData>
+					<SimpleData name="Name">David Smith</SimpleData>
+					<SimpleData name="Icon">111</SimpleData>
+					<SimpleData name="IconScale">1</SimpleData>
+					<SimpleData name="IconAltitude">1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.7096555,45.43228669999997,34.0063</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Andrew Lukas and Angela Lincoln</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EmilyLiu_LatLong_DDSIII">
+					<SimpleData name="Latitude">45.3764</SimpleData>
+					<SimpleData name="Longitude">-75.774</SimpleData>
+					<SimpleData name="Name">Andrew Lukas and Angela Lincoln</SimpleData>
+					<SimpleData name="Icon">111</SimpleData>
+					<SimpleData name="IconScale">1</SimpleData>
+					<SimpleData name="IconAltitude">1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.77396719999999,45.37640579999999,34.0063</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Emily Liu</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EmilyLiu_LatLong_DDSIII">
+					<SimpleData name="Latitude">45.4113</SimpleData>
+					<SimpleData name="Longitude">-75.6793</SimpleData>
+					<SimpleData name="Name">Emily Liu</SimpleData>
+					<SimpleData name="Icon">111</SimpleData>
+					<SimpleData name="IconScale">1</SimpleData>
+					<SimpleData name="IconAltitude">1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.67929929999998,45.41127669999997,34.0063</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ben Zhou</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EmilyLiu_LatLong_DDSIII">
+					<SimpleData name="Latitude">45.4108</SimpleData>
+					<SimpleData name="Longitude">-75.679</SimpleData>
+					<SimpleData name="Name">Ben Zhou</SimpleData>
+					<SimpleData name="Icon">111</SimpleData>
+					<SimpleData name="IconScale">1</SimpleData>
+					<SimpleData name="IconAltitude">1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.67900210000001,45.41075949999998,34.0063</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lucy Cohen</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EmilyLiu_LatLong_DDSIII">
+					<SimpleData name="Latitude">45.4113</SimpleData>
+					<SimpleData name="Longitude">-75.6793</SimpleData>
+					<SimpleData name="Name">Lucy Cohen</SimpleData>
+					<SimpleData name="Icon">111</SimpleData>
+					<SimpleData name="IconScale">1</SimpleData>
+					<SimpleData name="IconAltitude">1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.67929809999998,45.4112747,34.0063</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Jenny Lennon</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EmilyLiu_LatLong_DDSIII">
+					<SimpleData name="Latitude">45.4107</SimpleData>
+					<SimpleData name="Longitude">-75.6787</SimpleData>
+					<SimpleData name="Name">Jenny Lennon</SimpleData>
+					<SimpleData name="Icon">111</SimpleData>
+					<SimpleData name="IconScale">1</SimpleData>
+					<SimpleData name="IconAltitude">1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.67869899999999,45.41072700000001,34.0063</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Brad Pearson and Emma Pearson</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EmilyLiu_LatLong_DDSIII">
+					<SimpleData name="Latitude">45.4112</SimpleData>
+					<SimpleData name="Longitude">-75.6795</SimpleData>
+					<SimpleData name="Name">Brad Pearson and Emma Pearson</SimpleData>
+					<SimpleData name="Icon">111</SimpleData>
+					<SimpleData name="IconScale">1</SimpleData>
+					<SimpleData name="IconAltitude">1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.67954809999999,45.41123579999998,34.0063</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Claude Nelson</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EmilyLiu_LatLong_DDSIII">
+					<SimpleData name="Latitude">45.4193</SimpleData>
+					<SimpleData name="Longitude">-75.6995</SimpleData>
+					<SimpleData name="Name">Claude Nelson</SimpleData>
+					<SimpleData name="Icon">111</SimpleData>
+					<SimpleData name="IconScale">1</SimpleData>
+					<SimpleData name="IconAltitude">1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.69948059999999,45.41928970000001,34.0063</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bruce Brown</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EmilyLiu_LatLong_DDSIII">
+					<SimpleData name="Latitude">45.4421</SimpleData>
+					<SimpleData name="Longitude">-75.6475</SimpleData>
+					<SimpleData name="Name">Bruce Brown</SimpleData>
+					<SimpleData name="Icon">111</SimpleData>
+					<SimpleData name="IconScale">1</SimpleData>
+					<SimpleData name="IconAltitude">1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.64754870000002,45.44214499999998,34.0063</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Zoe Bowie</name>
+			<visibility>0</visibility>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff66fd</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EmilyLiu_LatLong_DDSIII">
+					<SimpleData name="Latitude">45.4323</SimpleData>
+					<SimpleData name="Longitude">-75.7097</SimpleData>
+					<SimpleData name="Name">Zoe Bowie</SimpleData>
+					<SimpleData name="Icon">111</SimpleData>
+					<SimpleData name="IconScale">1</SimpleData>
+					<SimpleData name="IconAltitude">1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-75.7096555,45.43228669999997,34.0063</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
