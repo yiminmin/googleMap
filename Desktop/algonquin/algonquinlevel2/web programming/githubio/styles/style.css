@@ -1,0 +1,331 @@
+/* CSS Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.33em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.container {
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 1.33em;
+}
+
+#nav {
+  background: #333;
+}
+
+#nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#nav ul li {
+  display: inline-block;
+  margin: 0 0.67em;
+}
+
+#nav ul li a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1.33em;
+  margin: 1.33em;
+}
+
+.wrapper {
+  margin: 1.33em 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  margin: 0.33em;
+}
+.container span {
+  font-size: 3em;
+}
+.container .introduction {
+  margin: 2.6em 6em;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  max-height: 100em;
+  max-width: 60em;
+  margin: 0.3em;
+  padding: 1.25em;
+  text-align: center;
+  background: #ffffff;
+}
+
+.box h3 {
+  margin: 1.3em 0;
+  color: #333;
+  font-size: 2.2em;
+}
+
+.box p {
+  font-size: 1.5em;
+  color: #888888;
+}
+
+.avatar {
+  flex: 1;
+}
+
+.introduction {
+  flex: 2;
+  margin-left: 3.33em;
+}
+
+.avatar {
+  margin-right: 1.33em;
+}
+
+.avatar .image img {
+  border-radius: 50%;
+  margin: 2em;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.introduction header {
+  margin: 1.8em 0;
+  color: #333;
+  font-size: 2.2em;
+}
+
+.introduction p {
+  font-size: 1.5em;
+  color: #888888;
+  margin: 1.33em 0;
+}
+
+.button-large {
+  display: inline-block;
+  padding: 0.67em 1.33em;
+  background-color: #3366cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 1.33em;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  margin: 1.33em;
+  width: 14em;
+}
+
+.button-large:hover {
+  background-color: #3366cc;
+}
+
+.button-large:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.13em #ffffff;
+}
+
+.button-large:active {
+  background-color: #3366cc;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.portfolio-images {
+  width: 8em;
+}
+
+.portfolio-images img {
+  display: block;
+  width: 100%;
+}
+
+/* .function-combo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.67em;
+  margin: 1.33em;
+}
+
+.function-combo input {
+  width: 15.33em;
+  height: 2.88em;
+}
+
+.function-combo select {
+  width: 10em;
+  height: 2.88em;
+}
+
+.function-combo button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 0.53em 0.8em;
+  cursor: pointer;
+  border-radius: 0.27em;
+  width: 10em;
+  height: 3.88em;
+}
+
+.function-combo button:hover {
+  background-color: #0056b3;
+} */
+.search-area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.filter-sort-area {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ 
+}
+
+#searchBar {
+  width: 100%;
+  /* Increase width to 100% */
+  height:2em;
+  
+}
+
+#searchButton {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 0.53em 0.8em;
+  cursor: pointer;
+  border-radius: 0.27em;
+  margin-left: 0.67em;
+}
+
+#resultInfo {
+  display: flex;
+  flex-direction: column;
+  /* or column to make the button below the text */
+  align-items: center;
+  font-size: 1em;
+}
+
+.sort-button {
+  /* non-selected button styles here */
+  color: #888888;
+  height: 2em;
+}
+
+.sort-button.selected {
+  /* selected button styles here */
+  background-color: #007bff;
+  color: #fafafa;
+}
+
+#sortDescButton {
+  margin-right: 1em;
+  /* Increase gap between sort descending button and filter */
+}
+
+#filterLevel {
+  height: 2em;
+}
+
+#searchButton:hover {
+  background-color: #0056b3;
+}
+
+#courses {
+  max-height: 60.33em;
+  overflow-y: auto;
+}
+
+.course {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 3fr;
+  gap: 0.67em;
+  margin-bottom: 0.67em;
+  padding: 0.67em;
+  border-bottom: 0.067em solid #ccc;
+}
+
+.course img {
+  width: 6.66em;
+  object-fit: cover;
+}
+
+.course h4,
+.course p {
+  margin: 0;
+  line-height: 1.8em;
+}
+
+#contact {
+  background-color: #333;
+  color: #f8f8f8;
+  margin-top: auto;
+}
+
+#contact .container.medium {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+#contact .contact-column {
+  margin: auto;
+  /* This centers the .contact-column */
+}
+
+#contact .social li {
+  display: inline-block;
+  margin: 1.8em;
+  /* This adds more space between your icons. */
+}
+
+#contact .social li a {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 3.33em;
+  /* This makes the icons bigger */
+}
+
+#contact footer {
+  padding: 2.8em 0;
+}
+
+#contact footer ul#copyright {
+  text-align: center;
+  color: #f8f8f8;
+  list-style: none;
+}

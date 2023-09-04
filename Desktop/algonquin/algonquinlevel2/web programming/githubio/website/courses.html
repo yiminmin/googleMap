@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>course - Emily Liu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/63203e21e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/courses.js"></script>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav id="nav">
+      <ul class="container">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="portfolio.html">My Work</a></li>
+        <li><a href="courses.html">My Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--Courses-->
+    <article id="courses" class="wrapper content">
+      <div class="container">
+        <header>
+          <h2>Here are the courses I'm currently studying.</h2>
+        </header>
+        <!-- Search bar -->
+        <!-- Search bar -->
+<div class="search-area">
+  <input
+    id="searchBar"
+    type="text"
+    placeholder="Search for courses..."
+  />
+  <button id="searchButton" onclick="searchCourse()">Search</button>
+
+</div>
+
+<!-- Filter and Sort area -->
+<div class="filter-sort-area">
+  <!-- Sort area -->
+  <button class="sort-button selected" id="sortAscButton" onclick="sortCourses('asc')">Sort Ascending</button>
+<button class="sort-button" id="sortDescButton" onclick="sortCourses('desc')">Sort Descending</button>
+
+
+  <!-- Filter area -->
+  <select id="filterLevel" onchange="filterCourses()">
+    <option value="all">All Levels</option>
+    <option value="Level1">Level1</option>
+    <option value="Level2">Level2</option>
+    <option value="Level3">Level3</option>
+    <option value="Level4">Level4</option>
+  </select>
+</div>
+
+<!-- Result Info -->
+<div id="resultInfo" style="display: none;">
+  <p>No results found.</p>
+  <button id="resetButton" onclick="resetSearch()">Reset Search-area</button>
+</div>
+
+
+        <div id="courseList">
+          
+          <!-- The courses will be filled here by JavaScript -->
+          
+        </div>
+      </div>
+      <footer>
+        <div class="middle">
+          <a
+            href="contact.html"
+            class="button-large
+          "
+            >Contact Me</a
+          >
+        </div>
+      </footer>
+    </article>
+    <!-- Contact -->
+    <article id="contact" class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="contact-column">
+            <hr />
+            <h3>Find me or contact me on ...</h3>
+            <ul class="social">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/helloemilyliu/"
+                  class="fa-brands fa-linkedin"
+                  target="_blank"
+                >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/yiminmin"
+                  class="fa-brands fa-github"
+                  target="_blank"
+                >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:emilyyimin@gmail.com"
+                  class="fas fa-mail-bulk"
+                  target="_blank"
+                >
+                </a>
+              </li>
+            </ul>
+            <hr />
+          </div>
+        </div>
+        <footer>
+          <ul id="copyright">
+            <li>© All rights reserved.</li>
+          </ul>
+        </footer>
+      </div>
+    </article>
+  </body>
+</html>
